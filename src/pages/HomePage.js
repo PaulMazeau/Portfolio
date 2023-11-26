@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import '../styles/homepage.css';
+import LinkArrow from '../assets/icons/arrow_link.svg'; // Adjust the path to where your SVG is stored
+
 
 function HomePage() {
   useEffect(() => {
