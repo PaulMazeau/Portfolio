@@ -101,9 +101,40 @@
       transform: translate(-100%, 0);
     }
   }
-  
-  img {
-    position: relative;
-    top: 40px;
-    width: 200px;
-  }
+
+  .content > *:not(.exclude-mix-blend) {
+    mix-blend-mode: difference;
+}
+
+.arrow-link-svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 4px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.row > .col {
+  display: flex;
+  align-items: center; 
+}
+
+.cell-link {
+  color: inherit; 
+  display: flex; 
+  align-items: center; 
+}
+
+.cell-link:hover .arrow-link-svg {
+  transform: rotate(45deg);
+}
+
+a {
+  display: inline-block; /* nécessaire pour la transformation */
+  transition: transform 0.3s ease;
+}
+
+a:hover {
+  transform: skew(-10deg); /* ajustez l'angle pour obtenir l'effet désiré */
+}
+

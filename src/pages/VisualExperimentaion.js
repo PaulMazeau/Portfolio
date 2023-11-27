@@ -62,7 +62,6 @@ const VisualExperimentation = () => {
     return () => images?.forEach((img) => observer.unobserve(img));
   }, []);
 
-  // Les chemins des images sont construits en supposant qu'elles sont placées dans le dossier `public/assets/images/`
   const images = Array.from({ length: numImages }, (_, i) => `/images/img${i + 1}.jpeg`);
 
   return (
@@ -79,11 +78,11 @@ const VisualExperimentation = () => {
       </div>
       <footer>
         <div className="footer-item">
-          <p>Portfolio work</p>
-          <p>Creative direction and design</p>
+          <p>Visual Experimentation</p>
+          <p>Donpablo Studio</p>
         </div>
         <div className="footer-item">
-          <p>Showcase</p>
+          <p>Homepage</p>
           <p>Contact</p>
         </div>
       </footer>
