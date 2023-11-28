@@ -13,6 +13,8 @@ function HomePage() {
   const projects = [
     { id: 1, name: 'MyColoc', img: img1 },
     { id: 2, name: 'Pigly', img: img2 },
+    { id: 3, name: 'Fanzine', img: img1 },
+    { id: 4, name: 'Disruptive World', img: img2 },
     // Ajoutez d'autres projets ici
   ];
 
@@ -31,18 +33,18 @@ function HomePage() {
     gsap.set(".marquee", { bottom: "-5%", opacity: 0 });
   
     // Debut animations
-    gsap.to("#overlay-dark", { duration: 2, top: "-100%", ease: "power3.inOut", delay: 4 });
+    gsap.to("#overlay-dark", { duration: 2, top: "-100%", ease: "4.inOut", delay: 4 });
   
     gsap.fromTo(".divider", 
       { scaleX: 0 }, // état de départ
-      { duration: 3, scaleX: 1, ease: "power3.inOut", delay: 1, stagger: { amount: 1 } } // état final
+      { duration: 3, scaleX: 1, ease: "power4.inOut", delay: 1, stagger: { amount: 1 } } // état final
     );
   
     gsap.to(".row > .col", {
       duration: 2,
       opacity: 1,
       y: 0,
-      ease: "power3.inOut",
+      ease: "power4.inOut",
       delay: 2,
       stagger: { amount: 1.5 }
     });
@@ -51,7 +53,7 @@ function HomePage() {
       duration: 1,
       bottom: "10%",
       opacity: 1,
-      ease: "power3.inOut",
+      ease: "power4.inOut",
       delay: 4.5
     });
 
@@ -109,7 +111,7 @@ function HomePage() {
         <div className="col">
           <div onClick={() => handleProjectClick(projects[0])} className="project-cell">
             <a href="#" className="cell-link" data-img="img1">
-              MyColoc <img src={LinkArrow} alt='lien' className='arrow-link-svg'/>
+              {projects[0].name}<img src={LinkArrow} alt='lien' className='arrow-link-svg'/>
             </a>
           </div>
         </div>
@@ -127,7 +129,7 @@ function HomePage() {
         <div className="col">
           <div onClick={() => handleProjectClick(projects[1])} className="project-cell">
             <a href="#" className="cell-link" data-img="img2">
-              Pigly <img src={LinkArrow} alt='lien' className='arrow-link-svg'/>
+              {projects[1].name}<img src={LinkArrow} alt='lien' className='arrow-link-svg'/>
             </a>
           </div>
         </div>
@@ -143,9 +145,11 @@ function HomePage() {
         <div className="col">France</div>
         <div className="col">Creative Direction</div>
         <div className="col">
-          <a href="/visual-experimentation" className="cell-link">
-            Fanzine <img src={LinkArrow} alt='lien' className='arrow-link-svg'/>
-          </a>
+          <div onClick={() => handleProjectClick(projects[1])} className="project-cell">
+            <a href="#" className="cell-link" data-img="img2">
+              {projects[2].name}<img src={LinkArrow} alt='lien' className='arrow-link-svg'/>
+            </a>
+          </div>
         </div>
         <div className="col">
           <a href="/visual-experimentation" className="cell-link">
@@ -159,9 +163,11 @@ function HomePage() {
         <div className="col">Paris based</div>
         <div className="col">Prototyping</div>
         <div className="col">
-          <a href="/visual-experimentation" className="cell-link">
-            Disruptive world <img src={LinkArrow} alt='lien' className='arrow-link-svg'/>
-          </a>
+          <div onClick={() => handleProjectClick(projects[1])} className="project-cell">
+            <a href="#" className="cell-link" data-img="img2">
+              {projects[3].name}<img src={LinkArrow} alt='lien' className='arrow-link-svg'/>
+            </a>
+          </div>
         </div>
         <div className="col">
           <a href="/visual-experimentation" className="cell-link">

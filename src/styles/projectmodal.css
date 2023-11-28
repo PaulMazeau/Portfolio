@@ -1,14 +1,14 @@
 .project-modal {
-    position: fixed; /* Changez en fixed */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100vw; /* Largeur du viewport */
-    height: 100vh; /* Hauteur du viewport */
-    background: red; /* Ou toute autre couleur de fond */
+    width: 100vw;
+    height: 100vh;
+    background: white;
     z-index: 10; 
     display: flex;
     padding: 20px;
-    visibility: hidden; /* Corrigez la syntaxe ici */
+    visibility: hidden;
     opacity: 0;
     transform: translateY(100%);
 }
@@ -38,4 +38,5 @@
 
 .project-name {
     font-weight: bold;
+    font-size: 40px;
 }
