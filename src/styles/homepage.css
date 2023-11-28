@@ -135,6 +135,23 @@ a {
 }
 
 a:hover {
-  transform: skew(-10deg); /* ajustez l'angle pour obtenir l'effet désiré */
+  transform: skew(-10deg);
 }
 
+.image-preview-container {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  mix-blend-mode: normal !important;
+}
+
+.image-preview-container img {
+  max-width: 100px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}

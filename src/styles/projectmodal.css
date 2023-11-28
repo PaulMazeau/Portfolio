@@ -1,0 +1,41 @@
+.project-modal {
+    position: fixed; /* Changez en fixed */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Largeur du viewport */
+    height: 100vh; /* Hauteur du viewport */
+    background: red; /* Ou toute autre couleur de fond */
+    z-index: 10; 
+    display: flex;
+    padding: 20px;
+    visibility: hidden; /* Corrigez la syntaxe ici */
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.modal-left-column {
+    flex: 1;
+}
+
+.modal-right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.modal-image {
+    width: 100%;
+}
+
+.project-name {
+    font-weight: bold;
+}
