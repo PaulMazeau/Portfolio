@@ -139,14 +139,12 @@ a:hover {
 }
 
 .image-preview-container {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
   mix-blend-mode: normal !important;
+  margin-left: 0 0 10px 10px;
 }
 
 .image-preview-container img {
-  max-width: 100px;
+  max-width: 25%;
 }
 
 .close-btn {
@@ -154,4 +152,12 @@ a:hover {
   right: 10px;
   top: 10px;
   cursor: pointer;
+}
+
+.drake-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  height: auto;
 }

@@ -4,6 +4,7 @@ import '../styles/homepage.css';
 import LinkArrow from '../assets/icons/arrow_link.svg';
 import img1 from '../assets/images/img1.jpeg';
 import img2 from '../assets/images/img2.jpeg';
+import drake from '../assets/images/drake.png';
 import ProjectModal from '../component/ProjectModal';
 
 function HomePage() {
@@ -15,7 +16,7 @@ function HomePage() {
     { id: 2, name: 'Pigly', img: img2 },
     { id: 3, name: 'Fanzine', img: img1 },
     { id: 4, name: 'Disruptive World', img: img2 },
-    // Ajoutez d'autres projets ici
+    // Ajoutez projets ici
   ];
 
   const handleProjectClick = project => {
@@ -82,8 +83,7 @@ function HomePage() {
       });
     });
   
-  
-    // Fonction de nettoyage
+    // Fonction de nettoyage de l'animation
     return () => {
       gsap.killTweensOf([".divider", ".row > .col", ".marquee", "#overlay-dark"]);
     };
@@ -249,7 +249,11 @@ function HomePage() {
         </div>
         <div className="col"></div>
         <div className="col"></div>
-        <div className="col"></div>
+        <div className="col">
+          <a href="https://www.instagram.com/lamazeee/" className="cell-link">
+            Blog <img src={LinkArrow} alt='lien' className='arrow-link-svg'/>
+          </a>
+        </div>
       </div>
       <div className="divider"></div>
       <div className="row">
@@ -284,9 +288,10 @@ function HomePage() {
         <div className="col"></div>
       </div>
       <div className="divider"></div>
-      <div className="image-preview-container" style={{ display: 'none' }}>
+      <div className="image-preview-container" style={{ display: 'block' }}>
           <img src="" alt="Aperçu" />
       </div>
+      <img src={drake} className="drake-img"/>
     </div>
     </>
   );
