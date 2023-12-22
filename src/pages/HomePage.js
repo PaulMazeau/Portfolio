@@ -226,7 +226,7 @@ function HomePage() {
       <div className="divider"></div>
       <div className="row">
         <div className="col">enterprise applications, I make things to solve</div>
-        <div className="col">hello@fix.studio</div>
+        <div className="col">mazeau.paul@gmail.com</div>
         <div className="col"></div>
         <div className="col"></div>
         <div className="col"></div>
